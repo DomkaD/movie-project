@@ -1,0 +1,6 @@
+export * from './MainPage'
+export * from './MovieDetailsPage'
+export * from './MoviesPage'
+export * from './LoginPage/LoginPage'
+export * from './ProfilePage/ProfilePage'
+export * from './NotFoundPage/NotFoundPage'

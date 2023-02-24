@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  min-height: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--color-light-dark);
+  overflow-anchor: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--btn-color)
+}
+
+
+ul, li, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.loading{
+  color: white;
+  font-size: 45px;
+  margin: auto auto;
+}

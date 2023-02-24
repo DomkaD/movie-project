@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {MainLayout} from "./layouts";
+import {Route, Routes} from "react-router-dom";
+import {LoginPage, MainPage, MovieDetailsPage, MoviesPage, ProfilePage} from "./pages";
+
+import './styles/index.sass';
+import {PrivateRoute} from "./router";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Routes>
+                <Route path={''} element={<MainLayout/>}>
+                    <Route index element={<MainPage/>}/>
+                    <Route path={'movie/:id'} element={<MovieDetailsPage/>}/>
+                    <Route path={'movies'} element={<MoviesPage/>}/>
+                    <Route path={'login'} element={<LoginPage/>}/>
+                    <Route path={'profile'} element={
+                        <PrivateRoute>
+                            <ProfilePage/>
+                        </PrivateRoute>
+                    }/>
+                    <Route path={'*'} element={<NotFoundPage/>}/>
+                </Route>
+            </Routes>
+        </div>
+
+    );
 }
 
 export default App;

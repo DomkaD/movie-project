@@ -1,0 +1,23 @@
+:root {
+  --white-color: #f6fffa;
+  --dark-blue-color: #040b28;
+  --gradient-1: rgb(95, 164, 217);
+  --gradient-2: rgb(222, 215, 124);
+  --gradient-3: rgb(211, 165, 231);
+  --gradient-4: rgb(250, 140, 181);
+  --badge-bg: violet;
+  --main-page-gradient-1: #ffd438;
+  --main-page-gradient-2: #50cdea;
+  --btn-color: black;
+}
+
+[data-theme="dark"] {
+  --gradient-1: rgb(18, 42, 52);
+  --gradient-2: rgb(33, 46, 101);
+  --gradient-3: rgb(69, 8, 91);
+  --gradient-4: rgb(73, 1, 1);
+  --badge-bg: #040638;
+  --main-page-gradient-1: #172742;
+  --main-page-gradient-2: #47524f;
+  --btn-color: black;
+}

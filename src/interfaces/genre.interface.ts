@@ -1,0 +1,15 @@
+export interface IGenre {
+    id: number,
+    name: string
+}
+
+export interface IGenresState {
+    movieGenres: IGenre[],
+    id: number | null,
+    status: string | null,
+    error: string | null
+}
+
+export interface IGenresService {
+    genres: IGenre[]
+}

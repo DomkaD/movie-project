@@ -1,0 +1,13 @@
+.rating {
+  &__white {
+    :global(.MuiSvgIcon-root) {
+      fill: white;
+    }
+  }
+
+  &__yellow {
+    :global(.MuiSvgIcon-root) {
+      fill: orange;
+    }
+  }
+}
